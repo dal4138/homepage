@@ -1,0 +1,85 @@
+<head>
+  <meta charset="utf-8">
+  <style>
+    ul {
+      list-style-type: none;
+      align: center;
+      margin: 1px;
+      padding: 10;
+    }
+
+    #login_box {
+      width: 220px;
+      height: 380px;
+      border: solid 5px skyblue;
+      border-radius: 15px;
+      margin: 30px;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      margin: 10px auto;
+    }
+
+    #login_box input {
+      width: 130px;
+      height: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    #id_pass span {
+      display: inline-block;
+      width: 40px;
+    }
+
+    #pass {
+      margin-top: 3px;
+    }
+
+    #btns li {
+      display: inline;
+    }
+
+    #btns input {
+      display: inline;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form name="form1" method="post" action="login1.php">
+    <div id="login_box" align="center">
+      <h2 align="center">로그인</h2><br>
+      <img src="./loginimage.png">
+      <ul id="input_button">
+        <li id="id_pass">
+          <ul>
+            <li>
+              <span>ID</span>
+              <input type="text" name="userName">
+            </li>
+            <li id="pass">
+              <span>PW</span>
+              <input type="password" name="passWord">
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!---------- 로그인, 회원가입, 취소 버튼들 ------------->
+
+      <ul id="btns">
+        <li><input type="submit" value="로그인"></li>
+        <li><button type="button" name="button"><a href="./signin.html">회원가입</a></button></li>
+        <li><button type="reset" name="button">취소</button></li>
+      </ul>
+    </div>
+  </form>
+</body>
